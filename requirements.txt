@@ -9,3 +9,11 @@ ckwrap
 seaborn
 kneed
 scipy
+vowpalwabbit==8.11.0
+validators==0.2
+tzlocal==1.1
+typing_extensions==4.3.0
+tornado==6.1
+texttable==1.6.3
+numba==0.56
+sktime==0.7

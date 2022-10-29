@@ -6,7 +6,6 @@ pandas==1.4.3
 streamlit==1.11.1
 shap
 ckwrap
-matplotlib.pyplot
 seaborn
 kneed
 pylab

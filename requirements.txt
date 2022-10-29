@@ -8,7 +8,7 @@ shap==0.41.0
 ckwrap==0.1.10
 seaborn==0.12.1
 kneed==0.8.1
-scipy==1.9.3
+scipy
 vowpalwabbit==8.11.0
 validators==0.2
 decorator==5.1.1

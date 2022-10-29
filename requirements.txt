@@ -4,11 +4,11 @@ imblearn==0.0
 numpy==1.23.1
 pandas==1.4.3
 streamlit==1.11.1
-shap
-ckwrap
-seaborn
-kneed
-scipy
+shap==0.41.0
+ckwrap==0.1.10
+seaborn==0.12.1
+kneed==0.8.1
+scipy==1.9.3
 vowpalwabbit==8.11.0
 validators==0.2
 tzlocal==1.1
@@ -16,4 +16,4 @@ typing_extensions==4.3.0
 tornado==6.1
 texttable==1.6.3
 numba==0.56
-sktime==0.7
+sktime==0.13.4

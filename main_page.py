@@ -5,12 +5,9 @@ import streamlit as st
 import evalml
 import shap
 import ckwrap
-import xlwings as xw
 import pickle
 import matplotlib.pyplot as plt
-import pythoncom
 import warnings
-import tensorflow as tf
 import seaborn as sns
 from evalml.model_understanding import readable_explanation
 from evalml.model_understanding import graph_permutation_importance
@@ -23,16 +20,7 @@ from evalml.model_understanding.prediction_explanations import explain_predictio
 from imblearn.over_sampling import SMOTENC
 from imblearn import over_sampling
 from io import BytesIO
-from keras.models import Model, load_model
-from keras.layers import Input, Dense
-from keras.callbacks import ModelCheckpoint, TensorBoard
-from keras import regularizers
 from kneed import KneeLocator
-from keras.layers import BatchNormalization
-from keras.layers import Softmax, ReLU, LeakyReLU, PReLU, ELU, ThresholdedReLU
-from keras.utils import np_utils
-from NDETCStemmer import NDETCStemmer
-from pylab import rcParams
 from scipy.stats import norm
 from scipy import stats
 from sklearn.model_selection import train_test_split
@@ -45,10 +33,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn import metrics
 from sklearn.metrics import accuracy_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-from tensorflow.keras.layers import Input, Dense, Lambda
-from tensorflow.keras.models import Model
-from tensorflow.keras import backend as K
-from tensorflow.keras import metrics
                 
 warnings.filterwarnings('ignore')
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -1625,14 +1609,13 @@ def page10():
     tab1,tab2 = st.tabs(["Average Competencies each Departement","Efective Hours for Each Position"])
     with tab1:
         data_competence= st.file_uploader("Upload file excel yang mengandung data competence dan employee demography",key=165)
-        col1,col2,col3=st.columns(3)
+        col1,col2=st.columns(2)
         with col1:
+            employee_demo=st.text_input("Silahkan isi dengan nama 'Sheet' yang mengandung data employee demography","Data Model", key=168)
             kolom_batch=st.text_input("pilih kolom paling kanan yang akan dibaca oleh model", "AS",key=166) 
             kolom_batch="A:"+kolom_batch
             header_batch=st.number_input("pilih baris berisi header dari data keseluruhan", 6,key=167) -1
         with col2:
-            employee_demo=st.text_input("Silahkan isi dengan nama 'Sheet' yang mengandung data employee demography","Data Model", key=168)
-        with col3:
             competence=st.text_input("Silahkan isi dengan nama 'Sheet' yang mengandung data employee competence","Kompetensi dan Perilaku", key=169)
         if data_competence is not None:
             df_employee = pd.read_excel(data_competence, sheet_name=employee_demo,header=header_batch,usecols=kolom_batch)

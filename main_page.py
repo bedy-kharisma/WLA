@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import warnings
 import seaborn as sns
 import openpyxl
+import XlsxWriter
 from evalml.model_understanding import readable_explanation
 from evalml.model_understanding import graph_permutation_importance
 from evalml.model_understanding import graph_partial_dependence

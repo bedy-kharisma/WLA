@@ -5,6 +5,7 @@ imblearn==0.0
 numpy
 pandas==1.4.3
 openpyxl==3.0.10
+XlsxWriter==3.0.3
 streamlit==1.11.1
 shap==0.41.0
 ckwrap==0.1.10

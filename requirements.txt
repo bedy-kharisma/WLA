@@ -60,3 +60,10 @@ kaleido==0.2.1
 ipykernel==6.16.2
 featuretools==1.16.0
 dask==2022.10.1
+ipython==8.5.0
+ipywidgets==8.0.2
+jupyter_client==7.4.4
+matplotlib_inline==0.1.6
+importlib-metadata==5.0.0
+idna==3.4
+holidays==0.16

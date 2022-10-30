@@ -4,6 +4,7 @@ imbalanced_learn==0.9.1
 imblearn==0.0
 numpy
 pandas==1.4.3
+openpyxl==3.0.10
 streamlit==1.11.1
 shap==0.41.0
 ckwrap==0.1.10

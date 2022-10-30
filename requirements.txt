@@ -1,3 +1,4 @@
+pip==22.3
 evalml==0.55.0
 imbalanced_learn==0.9.1
 imblearn==0.0
@@ -34,7 +35,7 @@ pyparsing==3.0.9
 pympler==1.0.1 
 pydeck==0.7.1 
 pyarrow==10.0.0 
-protobuf==4.21.9 
+protobuf 
 cython==0.29.32 
 tqdm==4.64.1 
 threadpoolctl==3.1.0 

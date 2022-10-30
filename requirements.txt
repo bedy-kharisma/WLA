@@ -87,3 +87,10 @@ category_encoders==2.2.2
 catboost==0.24.4
 scikit_image==0.18.2
 cachetools==4.2.1
+attrs==20.2.0
+blinker==1.0
+colorama==0.4.4
+imageio==2.21.3
+altair==3.2.0
+packaging==21.0
+protobuf==3.19.5

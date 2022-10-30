@@ -67,3 +67,12 @@ matplotlib_inline==0.1.6
 importlib-metadata==5.0.0
 idna==3.4
 holidays==0.16
+dask==2022.2.0
+contourpy==1.0.1
+convertdate==2.3.0
+debugpy==1.6.0
+fsspec==2022.7.0
+GitPython==3.1.26
+graphviz==0.19.1
+jedi==0.17.1
+jupyter_core==4.9.2

@@ -7,6 +7,7 @@ pandas==1.4.3
 openpyxl==3.0.10
 XlsxWriter==3.0.3
 streamlit==1.11.1
+altair<5
 shap==0.41.0
 ckwrap==0.1.10
 seaborn==0.12.1
@@ -94,4 +95,4 @@ colorama==0.4.4
 imageio==2.21.3
 packaging==21.0
 protobuf==3.19.5
-altair<5
+

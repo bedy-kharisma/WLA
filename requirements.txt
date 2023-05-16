@@ -94,3 +94,4 @@ colorama==0.4.4
 imageio==2.21.3
 packaging==21.0
 protobuf==3.19.5
+altair<5
